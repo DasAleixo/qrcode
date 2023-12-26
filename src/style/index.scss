@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --maincolor: rgb(58, 250, 154); 
+    --scolor: rgb(54, 136, 54);
+    --gap: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--maincolor);
+
+    .container {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        max-width: 500px;
+        height: auto;
+        background-color: white;
+        padding: var(--gap);
+        border-radius: 10px;
+
+        h1{
+            font-size: 25px;
+        }
+
+        form{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+            .container-form{
+                display: grid;
+                margin: 20px 0px;
+                .texto{
+                    font-size: 15px;
+                    color: grey;
+                    margin-bottom: 10px;
+                }
+                .entrada{
+                    font-size: 15px;
+                    padding: 10px;
+                    border: 2px solid rgb(0, 0, 0);
+                    border-radius: 7px;
+                }
+            }
+            .botao{
+                height: 50px;
+                padding: 10px;
+                font-size: 15px;
+                border: none;
+                border-radius: 7px;
+                background-color: var(--scolor);
+                color: white;
+                font-weight: 500;
+                cursor: pointer;
+                transition: 1s;
+            }    
+            .botao:hover{
+                background-color: rgba(54, 136, 54, 0.788);
+            }
+        }
+        .qr-code{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+            height: 200px;
+            border: 1px solid grey;
+            .code{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .disable {
+            display: none;
+        }
+    }
+}
